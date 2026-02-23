@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration - IT Training</title>
+    <link
+      rel="shortcut icon"
+      href="images/imgi_1_logo-dark.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <header class="z-50 w-full">
+      <!-- First Header -->
+      <div class="w-full bg-[var(--secondary)] hidden lg:block" id="black">
+        <div
+          class="flex items-center justify-between h-14 px-8 text-white max-w-[1200px] mx-auto"
+        >
+          <!-- First Header Left -->
+          <div class="flex items-center">
+            <div class="border-r-[1px] border-gray-400 px-4">
+              <i
+                class="fa-solid fa-phone text-[var(--primary)] text-[16px]"
+              ></i>
+              <span>Call: 123 4567 8901</span>
+            </div>
+            <div class="border-l-[1px] border-gray-400 px-4">
+              <i
+                class="fa-solid fa-envelope text-[var(--primary)] text-[16px]"
+              ></i>
+              <span>Email: info@gmail.com</span>
+            </div>
+          </div>
+          <!-- First Header Right -->
+          <div class="first-header-right">
+            <a href="#" class="py-3.5 px-12 flex items-center gap-3 text-lg">
+              <div
+                class="bg-[#25D366] h-8 w-8 p-4 flex items-center justify-center rounded-full"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              Whatsapp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Header -->
+      <!-- Laptop Second Header -->
+      <div
+        class="fixed z-50 hidden lg:block w-full bg-white shadow-md shadow-gray-400 transition-all duration-700 ease-in-out"
+        id="white"
+      >
+        <div
+          class="flex items-center justify-between max-w-[1200px] mx-auto px-8 py-3"
+        >
+          <!-- Logo -->
+          <a href="/"><img src="/images/HANNOVA TECH logo.png" class="h-[50px]" alt="" /></a>
+          <!-- Menu -->
+          <nav>
+            <ul class="flex items-center gap-8">
+              <li>
+                <a
+                  href="/"
+                  class="men font-semibold text-[var(--primary)] hover:text-[var(--primary)]"
+                  >Home</a
+                >
+              </li>
+              <li class="relative z-50">
+                <a
+                  href="/about"
+                  class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                  >About</a
+                >
+              </li>
+              <li class="relative" id="courses">
+                <a
+                  href="/courses"
+                  class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                  >Courses <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul
+                  id="course-list"
+                  class="absolute top-[45px] left-[-50px] w-[300px] p-3.5 rounded-md shadow-sm shadow-gray-300 bg-white flex flex-col gap-3"
+                >
+                  <li id="data-course" class="group cursor-pointer">
+                    <a
+                      href="/data-analysis"
+                      aria-disabled="true"
+                      class="men group-hover:text-[var(--primary)] font-semibold"
+                      >Data Analysis <i class="fa-solid fa-chevron-left"></i
+                    ></a>
+
+                    <ul
+                      id="data-course-list"
+                      class="absolute top-[45px] left-[-50px] w-[300px] p-3.5 rounded-md shadow-sm shadow-gray-300 bg-white flex flex-col gap-3"
+                    >
+                      <li>
+                        <a
+                          href="/excel-powerbi"
+                          class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                          >Excel & Power Bi</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/sql-tableau"
+                          class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                          >Sql & Tableau</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/data-python"
+                          class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                          >Python</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="/web-design"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Web Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/frontend-development"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Frontend Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/backend-development"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Backend Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/graphics-design"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Graphics Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/cybersecurity"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Cybersecurity</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/virtual-assistant"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Virtual Assistance</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/computer-basics"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Computer Basics</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/ui-ux-design"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >UI/UX Design</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative z-50">
+                <a
+                  href="/contact"
+                  class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- Mobile Second Header -->
+      <div
+        class="w-full block lg:hidden shadow-md shadow-gray-600 bg-white fixed z-50"
+      >
+        <div
+          class="flex items-center justify-between max-w-[1200px] mx-auto px-8 py-3"
+        >
+          <a href="/"><img src="/images/HANNOVA TECH logo.png" class="h-[40px]" alt="" /></a>
+          <button class="text-2xl">
+            <i class="fa-solid fa-bars" id="bar-menu"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <aside class="transition-all duration-900 ease-in-out">
+          <div
+            class="fixed top-0 bottom-0 left-0 right-0 bg-[#000000ae] dark"
+            id="dark"
+          ></div>
+          <div class="fixed top-0 bottom-0 w-[80%] bg-white overflow-y-scroll">
+            <div
+              class="p-5 flex items-center justify-between border-b-[1px] border-gray-300"
+            >
+              <a href="/"><img src="/images/HANNOVA TECH logo.png" class="h-[40px]" alt="" /></a>
+              <button id="x"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <!-- Menu Items -->
+            <nav class="p-3 flex flex-col gap-4">
+              <a
+                href="/"
+                class="men border-b-[1px] border-gray-300 py-2 font-semibold"
+                >Home</a
+              >
+              <a
+                href="/about"
+                class="men border-b-[1px] border-gray-300 py-2 font-semibold"
+                >About</a
+              >
+              <ul
+                class="flex justify-between items-center border-b-[1px] border-gray-300"
+              >
+                <a href="/courses" class="group men py-2 font-semibold">Courses</a>
+                <i id="course-drop" class="fa-solid fa-chevron-down"></i>
+              </ul>
+              <ul id="course-drop-content" class="hidden gap-5">
+                <li id="data-course" class="flex justify-between items-center">
+                  <a
+                    href="/data-analysis"
+                    aria-disabled="true"
+                    class="men font-semibold"
+                    >Data Analysis</a
+                  >
+                  <i id="data-drop" class="fa-solid fa-chevron-down"></i>
+                </li>
+                <ul
+                  id="data-drop-content"
+                  class="hidden gap-3 border-b-2 border-gray-300 pb-4"
+                >
+                  <li>
+                    <a
+                      href="/excel-powerbi"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Excel & Power Bi</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/sql-tableau"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Sql & Tableau</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/data-python"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Python</a
+                    >
+                  </li>
+                </ul>
+                <li>
+                  <a
+                    href="/web-design"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Web Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/frontend-development"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Frontend Web Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/backend-development"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Backend Web Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/graphics-design"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Graphics Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/cybersecurity"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Cybersecurity</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/virtual-assistant"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Virtual Assistance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/computer-basics"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Computer Basics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/ui-ux-design"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >UI/UX Design</a
+                  >
+                </li>
+              </ul>
+              <a
+                href="/contact"
+                class="men border-b-[1px] border-gray-300 py-2 font-semibold"
+                >Contact</a
+              >
+            </nav>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full pt-[100px] pb-24 bg-[var(--bg)] min-h-screen flex flex-col items-center justify-center">
+       <div class="max-w-xl w-full mx-auto bg-white p-8 shadow-lg rounded-lg">
+           <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Course Registration</h2>
+           <form id="registration-form" class="space-y-6">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-sm font-medium text-gray-700"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    required
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="course"
+                    class="block text-sm font-medium text-gray-700"
+                    >Interested Course</label
+                  >
+                  <select
+                    id="course"
+                    name="course"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border"
+                  >
+                    <option>Web Design</option>
+                    <option>Frontend Development</option>
+                    <option>Backend Development</option>
+                    <option>Data Analysis</option>
+                    <option>Cybersecurity</option>
+                    <option>Graphics Design</option>
+                    <option>UI/UX Design</option>
+                    <option>Computer Basics</option>
+                  </select>
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700"
+                    >Message (Optional)</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="3"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border"
+                  ></textarea>
+                </div>
+                
+                <div
+                    id="form-status"
+                    class="hidden text-sm font-medium mb-4 text-center"
+                ></div>
+
+                <div>
+                  <button
+                    type="submit"
+                    id="submit-btn"
+                    class="w-full flex justify-center rounded-md bg-[var(--primary)] px-4 py-3 text-sm font-bold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)]"
+                  >
+                    Submit
+                  </button>
+                </div>
+           </form>
+       </div>
+    </main>
+
+
+    <!-- Footer -->
+       <footer class="w-full bg-[var(--bg)] border-t border-gray-200">
+        <div class="max-w-[1200px] mx-auto px-4 py-11 lg:py-24 flex flex-col items-center justify-center">
+          <div class="flex flex-col lg:flex-row items-start justify-center gap-7 mt-7">
+            <!-- foot1 -->
+            <div class="w-full lg:w-[45%]">
+              <a href="/"><img src="images/HANNOVA TECH logo.png" class="h-[50px]" /></a>
+              <p class="text-lg my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aut illo corporis?</p>
+              <span class="flex items-center gap-2 text-lg"><p class="font-semibold">Location: </p>No 5 Preston Close, licester.</span>
+              <p class="text-lg"><span class="font-semibold">Call:</span> +234 906 835 1922</p>
+              <p class="text-lg"><span class="font-semibold">Email:</span> info@gmail.com</p>
+            </div>
+            <!-- foot2 -->
+             <div class="w-full lg:w-[25%] list-none flex flex-col gap-2">
+              <h2 class="font-semibold text-xl mb-2">Pages</h2>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/courses">Courses</a></li>
+              <li><a href="/contact">Contact</a></li>
+             </div>
+            <!-- foot3 -->
+             <div class="w-full lg:w-[25%] list-none flex flex-col gap-2">
+              <h2 class="font-semibold text-xl mb-2">Courses</h2>
+              <li><a href="/data-analysis">Data Analysis</a></li>
+              <li><a href="/frontend-development">Frontend Development</a></li>
+              <li><a href="/graphics-design">Graphics Design</a></li>
+              <li><a href="/cybersecurity">Cybersecurity</a></li>
+             </div>
+            <!-- foot4 -->
+             <div class="w-full lg:w-[25%] list-none flex flex-col gap-2">
+              <h2 class="font-semibold text-xl mb-2">Socials</h2>
+              <div class="flex items-center gap-3">
+                <a href="#" class="text-blue-700 text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="text-green-700 text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="text-cyan-600 text-xl"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="text-blue-700 text-xl"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="text-pink-700 text-xl"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+             </div>
+          </div>
+
+          
+        </div>
+        
+       </footer>
+
+       <div class="w-full bg-[#d5d6d6] flex items-center justify-center">
+        <!-- Second Foot -->
+           <div class="max-w-[1200px] mx-auto py-5 px-2">
+            <p class="text-center">Copyright &copy; 2025 <span class="text-[var(--secondary)]">EduBlink</span> | Developed By <a href="https://www.ireskitech.com" class="text-[var(--secondary)]" target="_blank">Ireskitech</a></p>
+           </div>
+       </div>
+
+    <!-- loader -->
+    <div id="loader" class="active">
+      <div class="spinner"></div>
+      <p class="dotter"></p>
+    </div>
+
+     <script src="./assets/js/index.js"></script>
+     <script src="./assets/loaderjs/loader.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    
+    <script src="assets/js/register.js"></script>
+    
+    <!-- Account Details Modal (Just in case user needs to see it here too, though not requested as trigger) -->
+     <div
+      id="register-modal"
+      class="fixed inset-0 hidden"
+      style="z-index: 9999"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <!-- Backdrop with inline style for background -->
+      <div
+        class="fixed inset-0 transition-opacity ease-out duration-300 opacity-0"
+        id="modal-backdrop"
+        style="background-color: rgba(0, 0, 0, 0.75)"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-full md:my-8 sm:w-full md:max-w-lg opacity-0 translate-y-4 sm:translate-y-0 md:scale-95 ease-out duration-300"
+            id="modal-panel"
+          >
+            <div class="bg-white px-4 pb-4 pt-5 md:p-6 md:pb-4 flex flex-col items-center justify-center">
+              <img src="/images/opay.webp" alt="" class="mb-[-20px] lg:mb-[-70px]">
+              <h2 class="text-2xl lg:text-4xl text-center font-semibold">9068351922</h2>
+              <h2 class="text-2xl lg:text-4xl text-center font-semibold">IREDIA ERHABOR</h2>
+              <p class="pop-message font-semibold text-center">After you have made your payment, send the payment receipt to Whatsapp: 09068351922. Then you be sent a link to register for the course</p>
+               <button
+                        type="button"
+                        id="close-modal-btn"
+                        class="absolute top-[5%] left-[90%] font-bold text-[var(--secondary)] text-xl"
+                      >
+                        <i class="fa-solid fa-x"></i>
+                      </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

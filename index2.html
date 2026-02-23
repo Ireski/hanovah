@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <button
+      class="bg-[var(--primary)] text-white p-4 relative z-10"
+      onclick="displayForm()"
+    >
+      Register
+    </button>
+    <div
+      id="formbox"
+      class="flex items-center justify-center fixed top-0 left-0 bottom-0 right-0 bg-[#0000007b] z-0 opacity-0 transition-all duration-700 ease-in-out"
+    >
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        class="w-[500px] mx-auto bg-white p-6 rounded-lg shadow-xl space-y-6 py-14 relative"
+      >
+        <button
+          type="button"
+          class="absolute left-[90%]"
+          onclick="cancleFormBox()"
+        >
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <h2 class="text-2xl font-bold text-gray-800">Course Registration</h2>
+
+        <!-- Full Name -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">
+            Full Name
+          </label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            required
+            class="mt-1 w-full rounded border-b-2 p-3 border-gray-300 focus:outline-none"
+            placeholder="John Doe"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">
+            Email Address
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            class="mt-1 w-full rounded border-b-2 p-3 border-gray-300 focus:outline-none"
+            placeholder="john@example.com"
+          />
+        </div>
+
+        <!-- Course Selection -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">
+            Select Course
+          </label>
+          <select
+            id="course"
+            name="course"
+            required
+            class="mt-1 w-full rounded border-b-2 p-3 border-gray-300 focus:outline-none"
+          >
+            <option value="">-- Choose a course --</option>
+            <option value="Data Analysis">Data Analysis</option>
+            <option value="Frontend Development">Frontend Development</option>
+            <option value="Backend Development">Backend Development</option>
+            <option value="Graphics Design">Graphics Design</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Product Design">Product Design</option>
+            <option value="Computer Appreciation">Computer Appreciation</option>
+            <option value="Virtual Assistance">Virtual Assistance</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+          </select>
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">
+            Phone Number
+          </label>
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            required
+            class="mt-1 w-full rounded border-b-2 p-3 border-gray-300 focus:outline-none"
+            placeholder="+1 234 567 890"
+          />
+        </div>
+
+        <!-- Hidden redirect after success -->
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://yourdomain.com/success.html"
+        />
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full bg-[var(--secondary)] text-white py-2 rounded-md hover:bg-[var(--primary)] transition cursor-pointer"
+        >
+          Register Now
+        </button>
+      </form>
+    </div>
+
+    <script>
+      let formbox = document.getElementById("formbox");
+      let input1 = document.querySelector("#name");
+      let input2 = document.querySelector("#email");
+      let input3 = document.querySelector("#course");
+      let input4 = document.querySelector("#phone");
+      function displayForm() {
+        formbox.classList.add("opacity-100");
+        formbox.classList.add("z-10");
+        console.log("Hi");
+      }
+      function cancleFormBox() {
+        formbox.classList.remove("opacity-100");
+        formbox.classList.add("opacity-0");
+        formbox.classList.remove("z-10");
+        formbox.classList.add("z-0");
+        input1.value = "";
+        input2.value = "";
+        input3.value = "";
+        input4.value = "";
+        console.log("Hi");
+      }
+
+      formbox.addEventListener("click", function (e) {
+        if (e.target === formbox) {
+          cancleFormBox();
+        }
+      });
+    </script>
+  </body>
+</html>

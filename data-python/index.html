@@ -1,0 +1,1180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary SEO Meta Tags -->
+    <title>Data Analysis with Python Training | Hanovah Tech</title>
+    <link
+      rel="shortcut icon"
+      href="/images/hanovah favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+
+    <meta
+      name="description"
+      content="Learn Data Analysis with Python using Pandas, NumPy, visualization tools, and real-world projects. Gain job-ready data analytics skills at Hanovah Tech."
+    />
+
+    <meta
+      name="keywords"
+      content="Data Analysis Training, Python Data Analysis, Data Analytics Course Nigeria, Learn Python Lagos, Pandas Training, Data Science Course"
+    />
+
+    <meta name="author" content="Hanovah Tech" />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hanovahtech.com/data-python" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="Data Analysis with Python Training | Hanovah Tech"
+    />
+    <meta
+      property="og:description"
+      content="Master Data Analysis using Python, Pandas, NumPy and real-world datasets. Practical training designed to make you job-ready."
+    />
+    <meta
+      property="og:image"
+      content="https://hanovahtech.com/images/data-python.jpg"
+    />
+    <meta property="og:url" content="https://hanovahtech.com/data-python" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hanovah Tech" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Data Analysis with Python Training | Hanovah Tech"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn Python Data Analysis with practical projects and industry tools. Start your data analytics career with Hanovah Tech."
+    />
+    <meta
+      name="twitter:image"
+      content="https://hanovahtech.com/images/data-python.jpg"
+    />
+    <meta name="twitter:url" content="https://hanovahtech.com/data-python" />
+  </head>
+  <body>
+    <header class="z-50 w-full">
+      <!-- First Header -->
+      <div class="w-full bg-[var(--secondary)] hidden lg:block" id="black">
+        <div
+          class="flex items-center justify-between h-14 px-8 text-white max-w-[1200px] mx-auto"
+        >
+          <!-- First Header Left -->
+          <div class="flex items-center">
+            <div class="border-r-[1px] border-gray-400 px-4">
+              <i
+                class="fa-solid fa-phone text-[var(--primary)] text-[16px]"
+              ></i>
+              <span>Call: +234 707 196 8259</span>
+            </div>
+            <div class="border-l-[1px] border-gray-400 px-4">
+              <i
+                class="fa-solid fa-envelope text-[var(--primary)] text-[16px]"
+              ></i>
+              <span>Email: hanovahtechacademy@gmail.com</span>
+            </div>
+          </div>
+          <!-- First Header Right -->
+          <div class="first-header-right">
+            <a href="#" class="py-3.5 px-12 flex items-center gap-3 text-lg">
+              <div
+                class="bg-[#25D366] h-8 w-8 p-4 flex items-center justify-center rounded-full"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              Whatsapp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Header -->
+      <!-- Laptop Second Header -->
+      <div
+        class="fixed z-50 hidden lg:block w-full bg-white shadow-md shadow-gray-400 transition-all duration-700 ease-in-out"
+        id="white"
+      >
+        <div
+          class="flex items-center justify-between max-w-[1200px] mx-auto px-8 py-3"
+        >
+          <!-- Logo -->
+          <a href="/"
+            ><img src="/images/HANOVAH TECH logo.png" class="h-[50px]" alt=""
+          /></a>
+          <!-- Menu -->
+          <nav>
+            <ul class="flex items-center gap-8">
+              <li>
+                <a
+                  href="/"
+                  class="men font-semibold hover:text-[var(--primary)]"
+                  >Home</a
+                >
+              </li>
+              <li class="relative z-50">
+                <a
+                  href="/about"
+                  class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                  >About</a
+                >
+              </li>
+              <li class="relative" id="courses">
+                <a
+                  href="/courses"
+                  class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                  >Courses <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul
+                  id="course-list"
+                  class="absolute top-[45px] left-[-50px] w-[300px] p-3.5 rounded-md shadow-sm shadow-gray-300 bg-white flex flex-col gap-3"
+                >
+                  <li id="data-course" class="group cursor-pointer">
+                    <a
+                      href="/data-analysis"
+                      aria-disabled="true"
+                      class="men group-hover:text-[var(--primary)] font-semibold"
+                      >Data Analysis <i class="fa-solid fa-chevron-left"></i
+                    ></a>
+
+                    <ul
+                      id="data-course-list"
+                      class="absolute top-[45px] left-[-50px] w-[300px] p-3.5 rounded-md shadow-sm shadow-gray-300 bg-white flex flex-col gap-3"
+                    >
+                      <li>
+                        <a
+                          href="/excel-powerbi"
+                          class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                          >Excel & Power Bi</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/sql-tableau"
+                          class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                          >Sql & Tableau</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/data-python"
+                          class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                          >Python</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="/web-design"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Web Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/frontend-development"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Frontend Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/backend-development"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Backend Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/graphics-design"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Graphics Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/cybersecurity"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Cybersecurity</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/virtual-assistant"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Virtual Assistance</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/computer-basics"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Computer Basics</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/ui-ux-design"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >UI/UX Design</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative z-50">
+                <a
+                  href="/contact"
+                  class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- Mobile Second Header -->
+      <div
+        class="w-full block lg:hidden shadow-md shadow-gray-600 bg-white fixed z-50"
+      >
+        <div
+          class="flex items-center justify-between max-w-[1200px] mx-auto px-8 py-3"
+        >
+          <a href="/"
+            ><img src="/images/HANOVAH TECH logo.png" class="h-[40px]" alt=""
+          /></a>
+          <button class="text-2xl">
+            <i class="fa-solid fa-bars" id="bar-menu"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <aside class="transition-all duration-900 ease-in-out">
+          <div
+            class="fixed top-0 bottom-0 left-0 right-0 bg-[#000000ae] dark"
+            id="dark"
+          ></div>
+          <div class="fixed top-0 bottom-0 w-[80%] bg-white overflow-y-scroll">
+            <div
+              class="p-5 flex items-center justify-between border-b-[1px] border-gray-300"
+            >
+              <a href="/"
+                ><img
+                  src="/images/HANOVAH TECH logo.png"
+                  class="h-[40px]"
+                  alt=""
+              /></a>
+              <button id="x"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <!-- Menu Items -->
+            <nav class="p-3 flex flex-col gap-4">
+              <a
+                href="/"
+                class="men border-b-[1px] border-gray-300 py-2 font-semibold"
+                >Home</a
+              >
+              <a
+                href="/about"
+                class="men border-b-[1px] border-gray-300 py-2 font-semibold"
+                >About</a
+              >
+              <ul
+                class="flex justify-between items-center border-b-[1px] border-gray-300"
+              >
+                <a href="/courses" class="group men py-2 font-semibold"
+                  >Courses</a
+                >
+                <i id="course-drop" class="fa-solid fa-chevron-down"></i>
+              </ul>
+              <ul id="course-drop-content" class="hidden gap-5">
+                <li id="data-course" class="flex justify-between items-center">
+                  <a
+                    href="/data-analysis"
+                    aria-disabled="true"
+                    class="men font-semibold"
+                    >Data Analysis</a
+                  >
+                  <i id="data-drop" class="fa-solid fa-chevron-down"></i>
+                </li>
+                <ul
+                  id="data-drop-content"
+                  class="hidden gap-3 border-b-2 border-gray-300 pb-4"
+                >
+                  <li>
+                    <a
+                      href="/excel-powerbi"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Excel & Power Bi</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/sql-tableau"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Sql & Tableau</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/data-python"
+                      class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                      >Python</a
+                    >
+                  </li>
+                </ul>
+                <li>
+                  <a
+                    href="/web-design"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Web Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/frontend-development"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Frontend Web Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/backend-development"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Backend Web Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/graphics-design"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Graphics Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/cybersecurity"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Cybersecurity</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/virtual-assistant"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Virtual Assistance</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/computer-basics"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >Computer Basics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/ui-ux-design"
+                    class="men hover:text-[var(--primary)] font-semibold transition-all duration-500 ease-in-out"
+                    >UI/UX Design</a
+                  >
+                </li>
+              </ul>
+              <a
+                href="/contact"
+                class="men border-b-[1px] border-gray-300 py-2 font-semibold"
+                >Contact</a
+              >
+            </nav>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full bg-[var(--bg)] h-auto lg:h-[100vh]">
+      <div class="max-w-[1200px] mx-auto py-28 px-5">
+        <!-- <h3 class="text-black mt-6 relative -top-[35px]">
+          <a href="/" class="text-black hover:text-[var(--primary)]">Home</a>
+          <i class="fa-solid fa-chevron-right text-[var(--primary)]"></i>
+          <a href="/courses" class="text-black hover:text-[var(--primary)]"
+            >Courses</a
+          >
+          <i class="fa-solid fa-chevron-right text-[var(--primary)]"></i>
+          <a
+            href="/courses/data-analysis"
+            class="text-black hover:text-[var(--primary)]"
+            >Data Analysis</a
+          >
+          <i class="fa-solid fa-chevron-right text-[var(--primary)]"></i>
+          <span class="font-semibold text-[var(--secondary)]"
+            >Python & Machine Learning</span
+          >
+        </h3> -->
+
+        <img
+          src="/images/Untitled_design__45_-removebg-preview.png"
+          alt=""
+          class="absolute top-2 left-[600px] hidden lg:block z-10"
+        />
+        <div class="flex flex-col lg:flex-row items-start justify-between">
+          <div class="w-full lg:w-[50%]">
+            <h4 class="font-semibold text-gray-500 text-[13px] py-5">
+              PYTHON & MACHINE LEARNING
+            </h4>
+            <h1
+              class="text-[var(--secondary)] text-2xl lg:text-5xl font-bold lg:leading-16 pb-4"
+            >
+              Learn to
+              <span class="text-[var(--primary)]"
+                >Analyze, Visualize, and Present</span
+              >
+              Data with Confidence
+            </h1>
+            <p class="text-xl my-4">
+              In this course, you’ll learn how to clean, analyze, and visualize
+              data using Microsoft Excel and Power BI, transform raw data into
+              interactive dashboards, and present clear insights that support
+              smarter business decisions.
+            </p>
+          </div>
+          <div
+            class="w-full md:w-[480px] lg:w-[370px] bg-[var(--secondary)] text-white p-4 rounded-lg flex flex-col items-start shadow z-20"
+          >
+            <img
+              src="/images/python image.jpg"
+              alt=""
+              class="w-full lg:w-[350px] rounded-lg bg-gray-100"
+            />
+            <h2 class="my-5 text-xl font-semibold text-white">
+              Course Includes:
+            </h2>
+            <div
+              class="flex items-center justify-between border-b-[1px] border-gray-400 w-full py-3"
+            >
+              <p>
+                <i class="fa-solid fa-money-bill text-[var(--primary)]"></i>
+                Price
+              </p>
+              <h4 class="text-white font-semibold text-lg">₦80,000</h4>
+            </div>
+            <div
+              class="flex items-center justify-between border-b-[1px] border-gray-400 w-full py-3"
+            >
+              <p>
+                <i class="fa-regular fa-clock text-[var(--primary)]"></i>
+                Duration
+              </p>
+              <h4 class="text-white font-semibold text-lg">7 Weeks</h4>
+            </div>
+            <div
+              class="flex items-center justify-between border-b-[1px] border-gray-400 w-full py-3"
+            >
+              <p>
+                <i class="fa-regular fa-calendar text-[var(--primary)]"></i>
+                Days
+              </p>
+              <h4 class="text-white font-semibold text-lg">Mon, Wed & Fri</h4>
+            </div>
+            <div
+              class="flex items-center justify-between border-b-[1px] border-gray-400 w-full py-3"
+            >
+              <p>
+                <i class="fa-solid fa-landmark text-[var(--primary)]"></i> Class
+              </p>
+              <h4 class="text-white font-semibold text-lg">
+                Physical / Online
+              </h4>
+            </div>
+            <div
+              class="flex items-center justify-between border-b-[1px] border-gray-400 w-full py-3 mb-6"
+            >
+              <p>
+                <i class="fa-solid fa-award text-[var(--primary)]"></i>
+                Certificate
+              </p>
+              <h4 class="text-white font-semibold text-lg">Yes</h4>
+            </div>
+            <a
+              class="openmodal relative left-[50%] translate-x-[-50%] bg-[var(--primary)] hover:bg-white hover:text-[var(--secondary)] transition-all duration-700 ease-in-out text-white py-2 px-5 rounded-sm cursor-pointer"
+              >Register Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-white">
+      <div class="max-w-[1200px] mx-auto pt-16 pb-4 px-4">
+        <!-- Tabs -->
+        <div
+          class="flex items-center justify-center gap-16 py-3 border-b-2 border-gray-300 w-full lg:w-[60%] relative px-3"
+        >
+          <button
+            class="tab active cursor-pointer text-md lg:text-lg font-semibold text-gray-400 w-[90px] lg:w-[120px]"
+            data-tab="overview"
+          >
+            Overview
+          </button>
+          <button
+            class="tab cursor-pointer text-md lg:text-lg font-semibold text-gray-400 w-[90px] lg:w-[120px]"
+            data-tab="curriculum"
+          >
+            Curriculum
+          </button>
+          <!-- <button
+            class="tab cursor-pointer text-md lg:text-lg font-semibold text-gray-400 w-[90px] lg:w-[120px]"
+            data-tab="instructor"
+          >
+            Instructors
+          </button> -->
+        </div>
+        <!-- Tabs Content -->
+        <div class="w-full lg:w-[60%] py-10">
+          <!-- Overview -->
+          <div id="overview" class="tab-content">
+            <h1 class="text-3xl font-semibold my-4 text-[var(--secondary)]">
+              Course Description
+            </h1>
+            <p class="my-5 text-gray-600 text-[17px]">
+              The Excel & Power BI Data Analysis course is designed to help you
+              understand, analyze, and visualize data effectively using two of
+              the most widely used business intelligence tools. You’ll learn how
+              to clean and organize data in Excel, perform meaningful analysis,
+              and transform your data into interactive dashboards using Power
+              BI.
+            </p>
+            <h2 class="text-xl font-semibold my-4 text-[var(--secondary)]">
+              What You'll Learn?
+            </h2>
+            <ul class="space-y-3 text-gray-600 mb-4">
+              <li>✔️ Organize, clean, and prepare data using Excel</li>
+              <li>✔️ Use formulas, functions, and pivot tables for analysis</li>
+              <li>✔️ Create charts and basic dashboards in Excel</li>
+              <li>✔️ Import and transform data in Power BI</li>
+              <li>✔️ Build interactive dashboards and reports</li>
+              <li>✔️ Present data insights clearly and professionally</li>
+            </ul>
+            <h2 class="text-xl font-semibold my-4 text-[var(--secondary)]">
+              Final Outcome
+            </h2>
+            <p class="my-5 text-gray-600 text-[17px]">
+              By the end of this course, you’ll be able to analyze real-world
+              datasets using Excel, build interactive dashboards with Power BI,
+              and confidently communicate insights that support smarter business
+              and organizational decisions.
+            </p>
+            <a
+              class="openmodal relative bg-[var(--secondary)] hover:bg-[var(--primary)] transition-all duration-700 ease-in-out text-white py-2 px-5 rounded-sm cursor-pointer"
+              >Register Now</a
+            >
+          </div>
+          <!-- Curriculum -->
+          <div id="curriculum" class="hidden tab-content">
+            <details class="my-5">
+              <summary class="font-semibold text-[var(--secondary)]">
+                Module 1: SQL Basics
+              </summary>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Introduction to SQL
+                and databases
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Creating and altering
+                tables
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Comparison and logical
+                operators
+              </p>
+            </details>
+            <details class="my-5">
+              <summary class="font-semibold text-[var(--secondary)]">
+                Module 2: Aggregations & Grouping
+              </summary>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Aggregate functions
+                (SUM, AVG, COUNT, MAX, MIN)
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> GROUP BY clause
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> ORDER BY and DISTINCT
+              </p>
+            </details>
+            <details class="my-5">
+              <summary class="font-semibold text-[var(--secondary)]">
+                Module 3: Advanced Filtering & Combining Data
+              </summary>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> HAVING clause
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> JOINS overview (INNER,
+                LEFT, RIGHT, FULL)
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> ● Subqueries and
+                nested queries
+              </p>
+            </details>
+            <details class="my-5">
+              <summary class="font-semibold text-[var(--secondary)]">
+                Module 4: Introduction to Tableau: Foundations & Core
+                Visualization
+              </summary>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Install Tableau
+                Public/Desktop
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Understand Tableau
+                interface: Data Pane, Analytics Pane, Shelves
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Connect to first
+                dataset (Sample - Superstore)
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Basic Visualizations
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Bar charts
+                (horizontal/vertical)
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Line charts for time
+                series
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Scatter plots
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Heat maps and
+                highlight tables
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Project: Sales
+                analysis dashboard with 4 chart types
+              </p>
+            </details>
+            <details class="my-5">
+              <summary class="font-semibold text-[var(--secondary)]">
+                Module 5: Calculations & Aggregations
+              </summary>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Basic calculations
+                (SUM, AVG, COUNT)
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Quick table
+                calculations
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Custom aggregation
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Project: Profit margin
+                analysis with calculated fields
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Filter types: Extract,
+                Data Source, Context
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Top N filtering
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Exercise: Create
+                dynamic dashboard with user-controlled parameters
+              </p>
+            </details>
+            <details class="my-5">
+              <summary class="font-semibold text-[var(--secondary)]">
+                Module 6: Advanced Analytics & Dashboard Design
+              </summary>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Dual axis charts
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Bullet graphs
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Data Preparation &
+                Blending
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Data interpreter for
+                cleaning
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Pivot and split data
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Joins vs.
+                Relationships
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Dashboards &
+                Storytelling
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Interactive
+                storytelling
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Best practices for
+                dashboard design
+              </p>
+              <p class="py-3 my-6 border-b-2 border-gray-300">
+                <i class="fa-regular fa-note-sticky"></i> Project: Complete
+                sales performance dashboard
+              </p>
+            </details>
+            <div class="flex items-center justify-center">
+              <a
+                class="openmodal relative bg-[var(--secondary)] hover:bg-[var(--primary)] transition-all duration-700 ease-in-out text-white py-2 px-5 rounded-sm cursor-pointer"
+                >Register Now</a
+              >
+            </div>
+          </div>
+          <!-- Instructors -->
+          <!-- <div id="instructor" class="hidden tab-content">
+            <div
+              class="flex flex-col lg:flex-row items-start lg:items-center gap-9"
+            >
+              <img
+                src="../../../images/iredia.png"
+                alt=""
+                class="w-[90%] lg:w-[180px] rounded-md"
+              />
+              <div>
+                <h3 class="font-semibold text-xl mb-2">Iredia Erhabor</h3>
+                <h6 class="text-gray-400 font-semibold mb-4">
+                  Frontend Developer
+                </h6>
+                <p class="text-gray-400 mb-7">Founder of Ireski Tech.</p>
+                <div class="flex items-center gap-5">
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:bg-[var(--primary)] hover:text-white hover:border-[var(--primary)] transition-all duration-700 ease-in-out p-4 border-2 rounded-full h-[25px] w-[25px] flex items-center justify-center"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:bg-[var(--primary)] hover:text-white hover:border-[var(--primary)] transition-all duration-700 ease-in-out p-4 border-2 rounded-full h-[25px] w-[25px] flex items-center justify-center"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:bg-[var(--primary)] hover:text-white hover:border-[var(--primary)] transition-all duration-700 ease-in-out p-4 border-2 rounded-full h-[25px] w-[25px] flex items-center justify-center"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Details -->
+    <section class="w-full bg-[var(--secondary)]">
+      <div class="max-w-[1200px] mx-auto py-24 px-3">
+        <!-- top -->
+        <div
+          class="flex flex-col lg:flex-row items-start lg:items-end justify-between border-b-[1px] border-gray-50 py-2"
+        >
+          <div class="text-white w-full lg:w-[60%]">
+            <h2 class="font-semibold text-3xl mb-2">Training Details</h2>
+            <p>
+              Our training programs are designed to equip students with
+              practical, industry-relevant skills through hands-on learning and
+              real-world projects.
+            </p>
+          </div>
+          <div
+            class="hidden lg:flex items-center justify-start lg:justify-center"
+          >
+            <a
+              class="openmodal relative bg-[var(--primary)] hover:bg-[var(--light)] transition-all duration-700 ease-in-out text-white hover:text-[var(--secondary)] py-2 px-5 rounded-sm cursor-pointer"
+              >Register Now</a
+            >
+          </div>
+        </div>
+        <!-- middle -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-3 mt-16">
+          <div class="text-[var(--secondary)] bg-white p-5 rounded-sm relative">
+            <div
+              class="bg-[var(--primary)] text-white w-[10%] flex items-center justify-center p-2 rounded-[1px] absolute top-[-30px] shadow-2xl z-50"
+            >
+              <i class="fa-solid fa-location-dot text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold py-2">Location</h3>
+            <p>No 5 Preston Close, licester.</p>
+          </div>
+          <div class="text-[var(--secondary)] bg-white p-5 rounded-sm relative">
+            <div
+              class="bg-[var(--primary)] text-white w-[10%] flex items-center justify-center p-2 rounded-[1px] absolute top-[-30px] shadow-2xl z-50"
+            >
+              <i class="fa-regular fa-calendar-days text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold py-2">Start Date</h3>
+            <p>23rd March, 2026.</p>
+          </div>
+          <div class="text-[var(--secondary)] bg-white p-5 rounded-sm relative">
+            <div
+              class="bg-[var(--primary)] text-white w-[10%] flex items-center justify-center p-2 rounded-[1px] absolute top-[-30px] shadow-2xl z-50"
+            >
+              <i class="fa-regular fa-clock text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold py-2">Time</h3>
+            <p>10AM - 1PM.</p>
+          </div>
+        </div>
+        <div
+          class="lg:hidden flex items-center justify-start lg:justify-center mt-8"
+        >
+          <a
+            class="openmodal relative bg-[var(--primary)] hover:bg-[var(--light)] transition-all duration-700 ease-in-out text-white hover:text-[var(--secondary)] py-2 px-5 rounded-sm cursor-pointer"
+            >Register Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses You May Like -->
+    <!-- Courses Section -->
+    <section class="w-full bg-white">
+      <div
+        class="max-w-[1200px] mx-auto px-2 pt-14 pb-8 lg:px-5 flex flex-col items-center justify-between"
+      >
+        <h4
+          class="text-2xl lg:text-4xl text-[var(--secondary)] font-bold mb-20 text-center"
+        >
+          Courses You May Like
+        </h4>
+
+        <!-- Courses -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Course -->
+          <div
+            class="bg-[var(--secondary)] text-white rounded-md shadow-md text-center flex flex-col items-center justify-center"
+          >
+            <div
+              class="overflow-hidden rounded-lg flex items-center justify-center"
+            >
+              <img
+                src="/images/graphics design.png"
+                alt=""
+                class="hover:scale-110 w-[300px] transition-all duration-700 ease-in-out rounded-lg mb-2"
+              />
+            </div>
+            <h2
+              class="text-xl font-bold mb-5 px-4 lg:px-6 bg-white rounded-md text-[var(--secondary)] w-[auto] py-[3px]"
+            >
+              Graphics Design
+            </h2>
+            <p class="text-white text-lg mb-3 px-4 lg:px-6">
+              Learn to design eye-catching visuals, logos, and marketing
+              materials using industry-standard design tools.
+            </p>
+            <div class="mt-2 mb-9 flex flex-col items-center gap-3">
+              <div class="flex items-center justify-between gap-5 mb-4">
+                <span class="font-semibold text-[20px]"
+                  ><i class="fa-regular fa-clock text-[var(--primary)]"></i> 6
+                  Weeks</span
+                >
+                <span class="text-[20px] font-semibold">₦70,000</span>
+              </div>
+              <a
+                href="/graphics-design"
+                class="course-more bg-[var(--primary)] hover:bg-white transition-all duration-500 ease-in-out font-semibold text-white hover:text-[var(--secondary)] py-[8px] px-2 rounded-[3px] w-[60%] md:w-[70%]"
+                >Learn More <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Course -->
+          <div
+            class="bg-[var(--secondary)] text-white rounded-md shadow-md text-center flex flex-col items-center justify-center"
+          >
+            <div
+              class="overflow-hidden rounded-lg flex items-center justify-center"
+            >
+              <img
+                src="/images/cybersecurity.png"
+                alt=""
+                class="hover:scale-110 w-[300px] transition-all duration-700 ease-in-out rounded-lg mb-2"
+              />
+            </div>
+            <h2
+              class="relative z-50 text-xl font-bold mb-5 px-4 lg:px-6 bg-white rounded-md text-[var(--secondary)] w-[auto] py-[3px]"
+            >
+              Cybersecurity
+            </h2>
+            <p class="text-white text-lg mb-3 px-4 lg:px-6">
+              Understand how to protect systems, networks, and data from cyber
+              threats using modern security techniques.
+            </p>
+            <div class="mt-2 mb-9 flex flex-col items-center gap-3">
+              <div class="flex items-center justify-between gap-5 mb-4">
+                <span class="font-semibold text-[20px]"
+                  ><i class="fa-regular fa-clock text-[var(--primary)]"></i> 12
+                  Weeks</span
+                >
+                <span class="text-[20px] font-semibold">₦250,000</span>
+              </div>
+              <a
+                href="/cybersecurity"
+                class="course-more bg-[var(--primary)] hover:bg-white transition-all duration-500 ease-in-out font-semibold text-white hover:text-[var(--secondary)] py-[8px] px-2 rounded-[3px] w-[60%] md:w-[70%]"
+                >Learn More <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Course -->
+          <div
+            class="bg-[var(--secondary)] text-white rounded-md shadow-md text-center flex flex-col items-center justify-center"
+          >
+            <div
+              class="overflow-hidden rounded-lg flex items-center justify-center"
+            >
+              <img
+                src="/images/backend.png"
+                alt=""
+                class="hover:scale-110 w-[300px] transition-all duration-700 ease-in-out rounded-lg mb-2"
+              />
+            </div>
+            <h2
+              class="relative z-50 text-xl font-bold mb-5 px-4 lg:px-6 bg-white rounded-md text-[var(--secondary)] w-[auto] py-[3px]"
+            >
+              Backend Development
+            </h2>
+            <p class="text-white text-lg mb-3 px-4 lg:px-6">
+              Build powerful server-side applications, manage databases, and
+              create secure APIs that power real-world platforms.
+            </p>
+            <div class="mt-2 mb-9 flex flex-col items-center gap-3">
+              <div class="flex items-center justify-between gap-5 mb-4">
+                <span class="font-semibold text-[20px]"
+                  ><i class="fa-regular fa-clock text-[var(--primary)]"></i> 12
+                  Weeks</span
+                >
+                <span class="text-[20px] font-semibold">₦200,000</span>
+              </div>
+              <a
+                href="/backend-development"
+                class="course-more bg-[var(--primary)] hover:bg-white transition-all duration-500 ease-in-out font-semibold text-white hover:text-[var(--secondary)] py-[8px] px-2 rounded-[3px] w-[60%] md:w-[70%]"
+                >Learn More <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="w-full">
+      <div
+        class="max-w-[1200px] mx-auto py-20 lg:px-5 flex items-center justify-center -mb-36"
+      >
+        <div
+          class="w-[90%] lg:w-[95%] bg-[url('../images/imgi_56_cta-bg-imgae-07.png')] bg-[var(--secondary)] bg-cover bg-center bg-blend-lighten h-[400px] py-[150px] rounded-lg flex flex-col items-center justify-center mb-32"
+        >
+          <div class="flex flex-col items-center justify-center gap-7">
+            <!-- Mail -->
+            <div class="text-white">
+              <h6 class="text-center text-2xl">Mail</h6>
+              <h1 class="text-lg lg:text-3xl font-semibold">
+                hanovahtechacademy@gmail.com
+              </h1>
+            </div>
+            <!-- Or -->
+            <h2
+              class="text-[var(--secondary)] bg-white h-[20px] w-[20px] p-7 rounded-full flex items-center justify-center font-semibold"
+            >
+              Or
+            </h2>
+            <!-- Call -->
+            <div class="text-white">
+              <h6 class="text-center text-2xl">Call</h6>
+              <h1 class="text-lg lg:text-3xl font-semibold">
+                +234 707 196 8259
+              </h1>
+            </div>
+          </div>
+          <!-- <button class="open-register-modal mt-8 bg-[var(--primary)] px-7 py-3 text-white rounded-sm relative lg:left-[-20px]">Register Now</button> -->
+          <a
+            href="/contact"
+            id="home-contact"
+            class="mt-5 bg-(--primary) hover:bg-white text-3xl text-white hover:text-[var(--secondary)] font-semibold py-3 px-6 rounded-sm text-center transition-all duration-700 ease-in-out"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-[var(--bg)]">
+      <div
+        class="max-w-[1200px] mx-auto px-4 py-11 lg:py-24 flex flex-col items-center justify-center"
+      >
+        <div
+          class="flex flex-col lg:flex-row items-start justify-center gap-7 mt-7"
+        >
+          <!-- foot1 -->
+          <div class="w-full lg:w-[45%]">
+            <a href="/"
+              ><img src="/images/HANOVAH TECH logo.png" class="h-[50px]" alt=""
+            /></a>
+            <p class="text-lg my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aut
+              illo corporis?
+            </p>
+            <span class="flex items-center gap-2 text-lg"
+              ><p class="font-semibold">Location:</p>
+              No 5 Preston Close, licester.</span
+            >
+            <p class="text-lg">
+              <span class="font-semibold">Call:</span> +234 707 196 8259
+            </p>
+            <p class="text-lg">
+              <span class="font-semibold">Email:</span>
+              hanovahtechacademy@gmail.com
+            </p>
+          </div>
+          <!-- foot2 -->
+          <div class="w-full lg:w-[25%] list-none flex flex-col gap-2">
+            <h2 class="font-semibold text-xl mb-2">Pages</h2>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </div>
+          <!-- foot3 -->
+          <div class="w-full lg:w-[25%] list-none flex flex-col gap-2">
+            <h2 class="font-semibold text-xl mb-2">Courses</h2>
+            <li><a href="/data-analysis">Data Analysis</a></li>
+            <li><a href="/frontend-development">Frontend Development</a></li>
+            <li><a href="/graphics-design">Graphics Design</a></li>
+            <li><a href="/cybersecurity">Cybersecurity</a></li>
+          </div>
+          <!-- foot4 -->
+          <div class="w-full lg:w-[25%] list-none flex flex-col gap-2">
+            <h2 class="font-semibold text-xl mb-2">Socials</h2>
+            <div class="flex items-center gap-3">
+              <a href="#" class="text-blue-700 text-xl"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-green-700 text-xl"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="#" class="text-cyan-600 text-xl"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a href="#" class="text-blue-700 text-xl"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="text-pink-700 text-xl"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-[#d5d6d6] flex items-center justify-center">
+        <!-- Second Foot -->
+        <div class="max-w-[1200px] mx-auto py-5 px-2">
+          <p class="text-center">
+            Copyright &copy; 2026
+            <span class="text-[var(--secondary)]">Hanovah Tech`</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Register Modal -->
+    <div
+      id="register-modal"
+      class="fixed inset-0 hidden"
+      style="z-index: 9999"
+      aria-labelledby="modal-title"
+      role="dialog"
+      aria-modal="true"
+    >
+      <!-- Backdrop with inline style for background -->
+      <div
+        class="fixed inset-0 transition-opacity ease-out duration-300 opacity-0"
+        id="modal-backdrop"
+        style="background-color: rgba(0, 0, 0, 0.75)"
+      ></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div
+          class="flex min-h-full items-center justify-center p-4 text-center sm:p-0"
+        >
+          <div
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all w-full md:my-8 sm:w-full md:max-w-lg opacity-0 translate-y-4 sm:translate-y-0 md:scale-95 ease-out duration-300"
+            id="modal-panel"
+          >
+            <div
+              class="bg-white px-4 pb-4 pt-5 md:p-6 md:pb-4 flex flex-col items-center justify-center"
+            >
+              <img
+                src="/images/opay.webp"
+                alt=""
+                class="mb-[-20px] lg:mb-[-70px]"
+              />
+              <h2 class="text-2xl lg:text-4xl text-center font-semibold">
+                9068351922
+              </h2>
+              <h2 class="text-2xl lg:text-4xl text-center font-semibold">
+                IREDIA ERHABOR
+              </h2>
+              <p class="pop-message font-semibold text-center">
+                After you have made your payment, send the payment receipt to
+                Whatsapp: 09068351922. Then you be sent a link to register for
+                the course
+              </p>
+              <button
+                type="button"
+                id="close-modal-btn"
+                class="absolute top-[5%] left-[90%] font-bold text-[var(--secondary)] text-xl"
+              >
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/js/index.js" defer></script>
+    <script src="/assets/js/popup.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  </body>
+</html>
